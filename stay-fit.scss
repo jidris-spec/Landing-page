@@ -1,0 +1,83 @@
+$main-color: white;
+$hover-color: #ff0000;
+$bg-color: #181818;
+$header-bg-color: blue;
+$btn-color: white;
+$btn-hover-color: #ff0000;
+$btn-bg-color: white;
+$font-family: 'Poppins', sans-serif;
+$font-size: 1.4rem;
+$font-weight: bold; 
+$border-radius: 5px;
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: $font-family;
+    background-color:$bg-color;
+}
+header {
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    height: 16vh;
+    width: 100%;
+    gap: 20px;
+    background-color: $header-bg-color;
+}
+.logo{
+    color: $main-color;
+    font-size: $font-size;
+    font-weight: $font-weight;
+    display: flex;
+    align-items: center;
+
+    img{
+        width: 200px;
+        height: 200px;
+        margin-left: 20px;
+        margin-top: 30px;
+        padding: 30px;
+    }
+}
+
+
+
+
+.nav-links{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    color: $main-color; 
+
+    a {
+        text-decoration: none;
+        color: $main-color;
+        font-size: $font-size;
+        font-weight: $font-weight;
+
+        &:hover {
+            color: $hover-color;
+        }
+    }
+
+}
+
+
+.login-btn{
+    background-color: $btn-bg-color;
+    border: none;
+    padding: 10px 20px;
+    border-radius: $border-radius;
+    cursor: pointer;
+
+    &:hover {
+        background-color: $btn-hover-color;
+        color: white;
+    }
+}
