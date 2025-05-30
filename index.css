@@ -5,7 +5,7 @@
 }
 body {
     font-family: 'Poppins', sans-serif;
-    background-color: #181818;
+    background-color: paleturquoise;
 }
 header {
     display: flex;
@@ -16,6 +16,8 @@ header {
     gap: 20px;
     background-color: blue;
     position: fixed;
+    z-index: 1000;
+    
 }
 .logo{
     color: white;
@@ -66,3 +68,133 @@ header {
     color: white;
 }
 
+.Hero-section {
+  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+  color: white;
+  padding: 4rem 2rem;
+  overflow: hidden;
+}
+
+.Hero-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
+
+.hero-text {
+  flex: 1;
+  animation: fadeInUp 0.8s ease-out;
+}
+
+.hero-text h1 {
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  margin-bottom: 1.5rem;
+  line-height: 1.2;
+  background: linear-gradient(90deg, #ff4d4d, #f9cb28);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.hero-text p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+  color: white;
+  width: 90%;
+  font-size: clamp(1rem, 5vw, 1.5rem);
+
+}
+
+.hero-button {
+  background: linear-gradient(90deg, #ff4d4d, #f9cb28);
+  color: #1a1a2e;
+  border: none;
+  padding: 0.8rem 2rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(249, 203, 40, 0.3);
+}
+
+.hero-button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(249, 203, 40, 0.4);
+}
+
+.hero-button:active {
+  transform: translateY(1px);
+}
+
+.hero-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  animation: fadeIn 0.10s ease-out;
+  margin-top: 5rem;
+}
+
+.hero-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateX(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive Design */
+/* @media (max-width: 768px) {
+  .Hero-content {
+    flex-direction: column;
+    text-align: center;
+    gap: 2rem;
+  }
+  
+  .hero-text p {
+    max-width: 100%;
+  }
+  
+  .hero-image {
+    order: -1;
+  }
+  
+  .hero-image img {
+    max-width: 80%;
+  }
+}
+
+@media (max-width: 480px) {
+  .Hero-section {
+    padding: 2rem 1rem;
+  }
+  
+  .hero-image img {
+    max-width: 100%;
+  }
+} */
