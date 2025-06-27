@@ -1,0 +1,60 @@
+
+.Hero-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+  }
+  
+  .hero-text {
+    flex: 1;
+    animation: fadeInUp 0.8s ease-out;
+  }
+  
+  .hero-text p {
+    font-size: var(--fs-base);
+    line-height: 1.6;
+    margin-bottom: var(--spacing-lg);
+    color: white;
+    width: 90%;
+    font-family: sans-serif;
+  }
+  
+  .hero-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    animation: fadeIn 3s ease-out;
+    margin-top: 7rem;
+  }
+  
+  .hero-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* Animations */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateX(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  

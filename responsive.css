@@ -1,0 +1,144 @@
+
+.hamburger {
+  display: none;
+}
+
+#menu-toggle {
+  display: none;
+}
+.nav-container {
+  position: relative;
+}
+
+/* Tablet */
+@media screen and (max-width: 995px) {
+    .nav-links {
+      display: none;
+      flex-direction: column;
+      background-color: var(--color-blue-dark);
+      position: absolute;
+      top: 100%;
+      left: 0;
+      width: 100%;
+      z-index: 1001;
+      padding: var(--spacing-sm);
+    }
+  
+    .hamburger {
+      display: block;
+      color: white;
+      font-size: var(--fs-large);
+    }
+  
+    #menu-toggle:checked ~ .nav-links {
+      display: flex;
+    }
+    .Hero-section {
+      padding: 15vh 0 0 0;
+      padding-bottom: var(--spacing-sm);
+    }
+    .Hero-content {
+      gap: var(--spacing-sm);
+    }
+    .hero-text {
+      margin: var(--spacing-xl);
+      padding: var(--spacing-sm);
+      margin-bottom: var(--spacing-lg);
+      animation: fadeInUp 0.8s ease-out;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+  
+    .hero-image {
+      margin-top: 5rem;
+    }
+  
+    .grid-item {
+      background-color: var(--color-white);
+      border-radius: 8px;
+      padding: 15px;
+      transition: transform 0.3s ease;
+    }
+  
+    .grid-item:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    }
+  }
+  
+  /* mobile */
+  @media screen and (max-width: 576px) {
+    .Hero-section,
+    .facility-section,
+    .service-section,
+    .pricing-section,
+    .Testimony-section,
+    .faq-section,
+    .contact-section,
+    header {
+      padding: 1rem;
+    }
+    .nav-links {
+      display: none;
+      flex-direction: column;
+      background-color: var(--color-blue-dark);
+      position: absolute;
+      top: 100%;
+      left: 0;
+      right: 0;
+      width: 100%;
+      z-index: 1001;
+    }
+  
+    /* .logo img {
+      transform: translateX(-4.5rem);
+    } */
+  
+    .login-btn {
+      display: block;
+    }
+    .Hero-section {
+      padding: 10vh 0 0 0;
+      padding-bottom: var(--spacing-sm);
+    }
+  
+    .hamburger {
+      display: block;
+      color: white;
+      font-size: var(--fs-large);
+    }
+  
+    #menu-toggle:checked ~ .nav-links {
+      display: flex;
+    }
+    .Hero-content {
+      flex-direction: column;
+      align-items: center;
+      gap: 0;
+    }
+    .hero-text {
+      margin: 0;
+      flex: 1;
+      animation: fadeInUp 0.8s ease-out;
+    }
+  
+    .hero-text h1 {
+      margin-top: 3rem;
+    }
+    .hero-image {
+      margin-top: 0;
+    }
+    .footer-container {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+  
+    .footer-logo,
+    .footer-links,
+    .footer-contact {
+      max-width: 90%;
+    }
+  }
+  

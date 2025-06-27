@@ -1,0 +1,36 @@
+
+/* FAQ */
+
+.accordion input {
+    display: none;
+  }
+  
+  .accordion-header {
+    background: var(--color-blue-dark);
+    color: var(--color-background);
+    padding: 10px;
+    display: block;
+    cursor: pointer;
+    margin-top: 5px;
+  }
+  
+  .accordion-content {
+    max-height: 0;
+    overflow: hidden;
+    background: var(--color-white);
+    color: var(--color-blue-dark);
+  
+    padding: 0 10px;
+    transition: max-height 0.3s ease;
+  }
+  
+  /* When checkbox is checked, show the content */
+  #faq1:checked ~ .accordion-content,
+  #faq2:checked ~ .accordion-content,
+  #faq3:checked ~ .accordion-content,
+  #faq4:checked ~ .accordion-content {
+    max-height: 200px;
+    padding: 10px;
+  }
+  
+  

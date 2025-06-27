@@ -3,38 +3,35 @@ tablets: 577px and 768px
 large tablets/small desktop: 769 and 1024px
 Desktop: 1025px and 1440px */
 
-:root {
-  /* Font Sizes */
-  --fs-small: clamp(0.8rem, 1vw, 1rem);
-  --fs-base: clamp(1rem, 1.6vw, 1.2rem);
-  --fs-medium: clamp(1.2rem, 0.5vw, 1.4rem);
-  --fs-large: clamp(2rem, 5vw, 3.5rem);
-  /* Color variables */
-  --color-black: #000000;
-  --color-white: #ffffff;
-  --color-red: #ff4d4d;
-  --color-yellow: #f9cb28;
-  --color-blue-dark: #1a1a2e;
-  --color-blue-light: #16213e;
-  --color-background: paleturquoise;
+/* Utility */
 
-  /* Spacing */
-  --spacing-xs: 0.5rem;
-  --spacing-sm: 1rem;
-  --spacing-md: 1.5rem;
-  --spacing-lg: 2rem;
-  --spacing-xl: 4rem;
-}
+/* header */
+
+/*  */
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+
 body {
   font-family: "Poppins", sans-serif;
-  background-color: var(--color-background);
+  background: linear-gradient(
+    135deg,
+    var(--color-blue-dark) 0%,
+    var(--color-blue-light) 100%
+  );
+
+  color: var(--color-white);
 }
+
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 16vh;
+}
+
 header {
   display: flex;
   justify-content: space-between;
@@ -45,7 +42,7 @@ header {
   background-color: var(--color-black);
   position: fixed;
   z-index: 1000;
-  padding: var(--spacing-sm);
+  padding: 0 4rem;
 }
 .logo {
   color: var(--color-white);
@@ -57,10 +54,7 @@ header {
 
 .logo img {
   transform: translateX(-3rem);
-  /* width: 180px; */
   height: 16vh;
-  /* margin-left: var(--spacing-sm); */
-  /* padding: var(--spacing-sm); */
 }
 
 .nav-links {
@@ -78,256 +72,4 @@ header {
 }
 .nav-links a:hover {
   color: var(--color-red);
-}
-
-.login-btn {
-  background: linear-gradient(90deg, var(--color-red), var(--color-yellow));
-  color: var(--color-blue-dark);
-  border: none;
-  padding: var(--spacing-xs) var(--spacing-md);
-  font-size: var(--fs-medium);
-  font-weight: 600;
-  border-radius: 30px;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  box-shadow: 0 4px 15px rgba(249, 203, 40, 0.3);
-}
-.login-btn:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 6px 20px rgba(249, 203, 40, 0.4);
-}
-
-.login-btn:active {
-  transform: translateY(1px);
-}
-
-.Hero-section {
-  background: linear-gradient(
-    135deg,
-    var(--color-blue-dark) 0%,
-    var(--color-blue-light) 100%
-  );
-  color: var(--color-white);
-  padding: 4rem 2rem;
-  overflow: hidden;
-}
-
-.Hero-content {
-  max-width: 1200px;
-  margin: 0 auto;
-  display: flex;
-  align-items: center;
-}
-
-.hero-text {
-  flex: 1;
-  animation: fadeInUp 0.8s ease-out;
-}
-
-.hero-text h1 {
-  font-size: var(--fs-large);
-  margin-bottom: 1.5rem;
-  line-height: 1.2;
-  background: linear-gradient(90deg, var(--color-red), var(--color-yellow));
-  color: transparent;
-  -webkit-background-clip: text;
-  background-clip: text;
-}
-
-.hero-text p {
-  font-size: var(--fs-base);
-  line-height: 1.6;
-  margin-bottom: var(--spacing-lg);
-  color: white;
-  width: 90%;
-}
-
-.hero-button {
-  background: linear-gradient(90deg, #ff4d4d, #f9cb28);
-  color: var(--color-blue-dark);
-  border: none;
-  padding: var(--spacing-xs) var(--spacing-lg);
-  font-size: var(--fs-medium);
-  font-weight: 600;
-  border-radius: 30px;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  box-shadow: 0 4px 15px rgba(249, 203, 40, 0.3);
-}
-
-.hero-button:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 6px 20px rgba(249, 203, 40, 0.4);
-}
-
-.hero-button:active {
-  transform: translateY(1px);
-}
-
-.hero-image {
-  flex: 1;
-  display: flex;
-  justify-content: center;
-  animation: fadeIn 3s ease-out;
-  margin-top: 5rem;
-}
-
-.hero-image img {
-  max-width: 100%;
-  height: auto;
-  border-radius: 10px;
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
-}
-
-/* Animations */
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: translateX(20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
-
-@keyframes fadeInUp {
-  from {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-.hamburger {
-  display: none;
-  /* font-size: var(--fs-base);
-  cursor: pointer;
-  padding: 10px;
-  color: white; */
-}
-
-#menu-toggle {
-  display: none;
-}
-.nav-container {
-  position: relative;
-}
-
-/* Tablet */
-@media screen and (max-width: 989px) {
-  .nav-links {
-    display: none;
-    flex-direction: column;
-    background-color: var(--color-blue-dark);
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: 100%;
-    z-index: 1001;
-    padding: var(--spacing-sm);
-  }
-  
-
-  .hamburger {
-   display: block;
-    color: white;
-    font-size: var(--fs-large);
-  }
-
-  #menu-toggle:checked ~ .nav-links {
-    display: flex;
-  }
-  .Hero-section {
-    padding: 10vh 0 0 0;
-    padding-bottom: var(--spacing-sm);
-  }
-  .Hero-content {
-    flex-direction: column;
-    align-items: center;
-    gap: var(--spacing-sm);
-  }
-  .hero-text {
-    margin: var(--spacing-xl);
-    padding: var(--spacing-sm);
-    margin-bottom: var(--spacing-lg);
-    flex: 1;
-    animation: fadeInUp 0.8s ease-out;
-  }
-
-  .hero-image {
-    margin: 1rem;
-  }
-
-  
-}
-
-/* mobile */
-@media screen and (max-width: 576px) {
-  .nav-links {
-    display: none;
-    flex-direction: column;
-    background-color: var(--color-blue-dark);
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: 100%;
-    z-index: 1001;
-  }
-
-  .login-btn {
-    display: block;
-  }
-  .Hero-section {
-    border: 1px solid red;
-    padding: 10vh 0 0 0;
-    padding-bottom: var(--spacing-sm);
-  }
-
-  .hamburger {
-    display: block;
-    color: white;
-    font-size: var(--fs-large);
-  }
-
-  #menu-toggle:checked ~ .nav-links {
-    display: flex;
-  }
-  .Hero-content {
-    flex-direction: column;
-    align-items: center;
-    gap: 0;
-  }
-  .hero-text {
-    margin: var(--spacing-md);
-    flex: 1;
-    animation: fadeInUp 0.8s ease-out;
-  }
-
-  .hero-text h1 {
-    margin-top: 3rem;
-  }
-  .hero-image {
-    margin-top: 0;
-  }
-}
-
-.facility-section {
-  background-color: var(--color-blue-light);
-  padding: var(--spacing-lg) 0;
-  color: var(--color-white);
-}
-.facility-grid{
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 2rem;
-  padding: 2rem;
-}
-
-.facility-card img {
-  width: 100%;
-  height: auto;
 }

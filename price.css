@@ -1,0 +1,18 @@
+.price {
+    font-size: var(--fs-large);
+    color: var(--color-black);
+    text-align: center;
+    font-weight: bold;
+  }
+  .grid-item ul {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+    text-align: center;
+  }
+  
+  .grid-item ul li {
+    margin-bottom: 10px;
+    color: var(--color-black);
+    font-size: 1rem;
+  }

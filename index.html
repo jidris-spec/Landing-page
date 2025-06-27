@@ -3,13 +3,25 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title> fitness landing page</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="./utility.css">
+    <link rel="stylesheet" href="./responsive.css">
+    <link rel="stylesheet" href="./hero.css">
+    <link rel="stylesheet" href="./facility.css">
+    <link rel="stylesheet" href="./service.css">
+    <link rel="stylesheet" href="./price.css">
+    <link rel="stylesheet" href="./testimonial.css">
+    <link rel="stylesheet" href="./FAQ.css">
+    <link rel="stylesheet" href="./contact.css">
+    <link rel="stylesheet" href="./footer.css">     
+
   </head>
   <body>
     <header>
       <div class="logo">
-        <img src="image/logo.jpg" alt="fitness logo" />
+        <img src="img/logo.jpg" alt="fitness logo" />
         <span>💪 Stay Fits</span>
       </div>
 
@@ -17,14 +29,13 @@
       <label for="menu-toggle" class="hamburger">☰</label>
 
       <nav class="nav-links">
-        <a href="#Facility.html">Facility</a>
-        <a href="#Services.html">Services</a>
-        <a href="#Trainers.html">Trainers</a>
-        <a href="#pricing.html">Pricing</a>
-        <a href="#why-us.html">Why Us</a>
-        <a href="#testimonial.html">Testimonial</a>
-        <a href="#contact.html">Contact</a>
-        <button class="login-btn">Login</button>
+        <a href="#facility">Facility</a>
+        <a href="#services">Services</a>
+        <a href="#pricing">pricing</a>
+        <a href="#testimonial">Testimonial</a>
+        <a href="#faq">FAQ</a>
+        <a href="#contact">Contact</a>
+        <button class="btn">Login</button>
       </nav>
     </header>
 
@@ -37,29 +48,31 @@
             gym is where excuses end and transformation begins. Show up. Lift
             heavy. Leave stronger.
           </p>
-          <button class="hero-button">Get Started</button>
+          <button class="btn">Get Started</button>
         </div>
         <div class="hero-image">
-          <img src="image/hero-image1.webp" alt="fitness image" />
+          <img src="img/hero-image1.webp" alt="fitness image" />
         </div>
       </div>
     </section>
 
-    <section class="facility-section">
-      <h2>Our Facilities</h2>
-      <div class="facility-grid">
-        <div class="card">
-          <img src="image/facility1.jpeg" alt="Weight Room" />
-          <h2>Cardio Zone</h2>
+    <section id="facility" class="facility-section">
+      <h1>Our Facilities</h1>
+        
+      
+      <div class="grid">
+        <div class="grid-item">
+          <img src="img/facility1.jpeg" alt="Cardio Area" />
+          <h3>Cardio Zone</h3>
           <p>
             Stay energized and boost your endurance in our Cardio Zone, equipped
             with state-of-the-art treadmills, ellipticals, and entertainment
-            screens to keep you motivated during every session.
+            screens to keep you motivated during every session
           </p>
         </div>
-        <div class="card">
-          <img src="image/facility2.jpeg" alt="Weight Room" />
-          <h2>Strength Training Area</h2>
+        <div class="grid-item">
+          <img src="img/facility2.jpeg" alt="Weight Training Area" />
+          <h3>Strength Area</h3>
           <p>
             Build muscle, boost confidence, and improve your overall health in
             our dedicated Strength Training Area. Our wide variety of resistance
@@ -67,9 +80,251 @@
             supportive environment.
           </p>
         </div>
-
-        <!-- Add more cards -->
+        <div class="grid-item">
+          <img src="img/facility3.jpg" alt="Functional Training" />
+          <h3>Functional Zone</h3>
+          <p>
+            Build strength and enhance performance in our Functional Training
+            Zone, featuring dual adjustable pulley machines designed for
+            full-body workouts. Whether you're targeting your core, arms, or
+            lower body, these versatile cable systems support a wide range of
+            dynamic movements to help you train smarter and move better
+          </p>
+        </div>
+        <div class="grid-item">
+          <img src="img/facility4.jpg" alt="Group Class Studio" />
+          <h3>Changing Room</h3>
+          <p>
+            Refresh, relax, and reset in our modern Shower & Changing Facility.
+            Designed with privacy and comfort in mind, our sleek, frosted-glass
+            shower cubicles and spacious dressing area offer a clean, tranquil
+            space to freshen up before or after your workout. Whether you're
+            heading out or just arriving, this facility helps you stay
+            confident, clean, and comfortable.
+          </p>
+        </div>
       </div>
     </section>
+
+    <section id="services" class="service-section">
+      <h1 class="service-text">Our Services</h1>
+      <div class="grid">
+        <div class="grid-item">
+          <div class="service-emoji">🏋️</div>
+          <h3 class="service-title">Personal Training</h3>
+          <p class="service-description">
+            Customized workout plans with one-on-one coaching to reach your
+            fitness goals.
+          </p>
+        </div>
+
+        <div class="grid-item">
+          <div class="service-emoji">🧘‍♀️  🧘‍♂️</div>
+          <h3 class="service-title">Group Classes</h3>
+          <p class="service-description">
+            Fun and energetic group sessions including HIIT, Zumba, and Yoga.
+          </p>
+        </div>
+
+        <div class="grid-item">
+          <div class="service-emoji">🥗	</div>
+          <h3 class="service-title">Nutrition Guidance</h3>
+          <p class="service-description">
+            Expert meal plans and advice to support your health and training
+            goals.
+          </p>
+        </div>
+
+        <div class="grid-item">
+          <div class="service-emoji">🅿️</div>
+          <h3 class="service-title">Free car Parking </h3>
+          <p class="service-description">
+            Convenient and spacious car parking available at no extra cost for all
+            customers.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="pricing" class="pricing-section">
+      <h1>Affordable Fee For Everyone</h1>
+        <div class="grid">
+          <div class="grid-item">
+            <h3>Basic Plan</h3>
+            <p class="price">&#8364; 10 /day</p>
+            <ul>
+              <li>Access to Cardio Zone</li>
+              <li>Weight Training Area</li>
+              <li>Shower & Changing Facility</li>
+            </ul>
+            <button class="btn">Join Now</button>
+          </div>
+          <div class="grid-item">
+            <h3>Advanced Plan</h3>
+            <p class="price">&#8364; 40 /month</p>
+            <ul>
+              <li>Access to Cardio Zone</li>
+              <li>Weight Training Area</li>
+              <li>Shower & Changing Facility</li>
+            </ul>
+            <button class="btn">Join Now</button>
+          </div>
+          <div class="grid-item">
+            <h3>Premium Plan</h3>
+            <p class="price">&#8364; 60 /month</p>
+            <ul>
+              <li>All Basic Plan Features</li>
+              <li>Access to Functional Zone</li>
+              <li>Personal Training Sessions</li>
+            </ul>
+            <button class="btn">Join Now</button>
+          </div>
+          <div class="grid-item">
+            <h3>Family Plan</h3>
+            <p class="price">&#8364; 100 /month</p>
+            <ul>
+              <li>All Premium Plan Features</li>
+              <li>Group Classes</li>
+              <li>Nutrition Guidance</li>
+            </ul>
+            <button class="btn">Join Now</button>
+          </div>
+        </div>
+    </section>
+
+    <section id="testimonial" class="Testimony-section">
+      <div class="carousel-container">
+        <!-- Radio Buttons (hidden) -->
+        <input type="radio" name="carousel" id="slide1" checked />
+        <input type="radio" name="carousel" id="slide2" />
+        <input type="radio" name="carousel" id="slide3" />
+
+        <!-- Slides Track -->
+        <div class="carousel">
+          <div class="slides">
+            <div class="slide" id="s1">
+              <img
+                src="img/Testimony1.jpeg"
+                alt="Before and after transformation 1"
+              />
+            </div>
+
+            <div class="slide" id="s2">
+              <img
+                src="img/Testimony2.jpeg"
+                alt="Before and after transformation 2"
+              />
+            </div>
+            <div class="slide" id="s3">
+              <img
+                src="img/Testimony3.jpeg"
+                alt="Before and after transformation 3"
+              />
+            </div>
+          </div>
+        </div>
+
+        <!-- Navigation Buttons -->
+        <div class="nav">
+          <label for="slide1"></label>
+          <label for="slide2"></label>
+          <label for="slide3"></label>
+        </div>
+      </div>
+    </section>
+<!--  FAQ Section -->
+    <section id="faq" class="faq-section">
+      <h1>Frequently Asked Questions</h1>
+      <div class="accordion">
+        <div class="accordion-item">
+          <input type="checkbox" id="faq1" />
+          <label for="faq1" class="accordion-header">What are the gym hours ?</label>
+          <div class="accordion-content">
+            <p>We are open from 6 AM to 10 PM, Monday to Saturday.</p>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <input type="checkbox" id="faq2" />
+          <label for="faq2" class="accordion-header">Do you offer personal training  ?</label>
+          <div class="accordion-content">
+            <p>Yes, we have certified personal trainers available for one-on-one sessions.</p>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <input type="checkbox" id="faq3" />
+          <label for="faq3" class="accordion-header">Is there a cancellation policy  ?</label>
+          <div class="accordion-content">
+            <p>Yes, you can cancel your membership with a 30-day notice.</p>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <input type="checkbox" id="faq4" />
+          <label for="faq4" class="accordion-header">Do you have group classes  ?</label>
+          <div class="accordion-content">
+            <p>Yes, we offer various group classes including yoga, Zumba, and HIIT.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact-section">
+      <h1>Contact Form</h1>
+
+    <div class="container">
+    <form action="/action_page.php">
+      <label for="fname">First Name</label>
+      <input type="text" id="fname" name="first_name" placeholder="Your name..">
+
+      <label for="lname">Last Name</label>
+      <input type="text" id="lname" name="last_name" placeholder="Your last name..">
+
+      <label for="phone">Phone Number</label>
+      <input type="text" id="phone" name="phone" placeholder="Your phone number..">
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" placeholder="Your email..">
+
+      <label for="subject">Subject</label>
+      <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+      
+      <input type="submit" class="btn" value="Submit">
+    </form>
+  </div>
+
+  <footer class="footer-section">
+  <div class="footer-container">
+    <div class="footer-logo">
+      <h2>💪 Stay Fits</h2>
+      <p>Your daily dose of fitness and wellness motivation.</p>
+    </div>
+
+    <div class="footer-links">
+      <h3>Quick Links</h3>
+      <ul>
+        <li><a href="#facility">Facility</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#pricing">Pricing</a></li>
+        <li><a href="#testimonial">Testimonials</a></li>
+        <li><a href="#faq">FAQ</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-contact">
+      <h3>Contact</h3>
+      <p>Email: info@stayfits.com</p>
+      <p>Phone: +40 123 456 789</p>
+      <p>Address: Bucharest, Romania</p>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>&copy; 2025 Stay Fits. All rights reserved.</p>
+  </div>
+</footer>
+
+
   </body>
 </html>
