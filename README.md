@@ -25,10 +25,10 @@ A fully responsive fitness landing page built using pure HTML and CSS. Designed 
   - CSS checkbox & radio hacks for interactivity
 
 
-![hero-image](https://github.com/user-attachments/assets/c2f65c7b-f1b1-4324-b5a7-4077d6518e4e)
+![hero-image](https://github.com/user-attachments/assets/36c6f949-9255-4c14-ade9-91c2ca7e4841)
 ![facility section](https://github.com/user-attachments/assets/05206cb4-fdea-4b14-9095-b954a0c36116)
 ![service section](https://github.com/user-attachments/assets/cde9aced-68ce-4515-8c8c-3593f634114e)
-![testimonial](https://github.com/user-attachments/assets/e41e3d11-fd98-45c8-9ee3-3b38d8d8cbe3)
+![testimonial](https://github.com/user-attachments/assets/d027a702-02c7-4c9d-8b37-428d5b3d51aa)
 ![FAQ](https://github.com/user-attachments/assets/877f658b-3497-4793-aec2-69dfcf89260c)
 ![Footer](https://github.com/user-attachments/assets/b79341f0-921c-4871-9554-cbd7ee805bfe)
 
