@@ -26,11 +26,11 @@ A fully responsive fitness landing page built using pure HTML and CSS. Designed 
 
 
 ![hero-image](https://github.com/user-attachments/assets/c2f65c7b-f1b1-4324-b5a7-4077d6518e4e)
-![facility section](https://github.com/user-attachments/assets/b990474a-5dd6-4143-adce-0e0459edf78c)
-![service section](https://github.com/user-attachments/assets/5e301e0b-9411-4115-b0a4-f48faec74a26)
-![testimonial](https://github.com/user-attachments/assets/2f62d1b8-6b38-4a56-a19f-001236dd34e3)
-![FAQ](https://github.com/user-attachments/assets/9753aa1e-503e-447d-a0d1-ac9239e5790f)
-![Footer](https://github.com/user-attachments/assets/2e06f5b2-3340-469c-8a62-43a6fb2c4172)
+![facility section](https://github.com/user-attachments/assets/05206cb4-fdea-4b14-9095-b954a0c36116)
+![service section](https://github.com/user-attachments/assets/cde9aced-68ce-4515-8c8c-3593f634114e)
+![testimonial](https://github.com/user-attachments/assets/e41e3d11-fd98-45c8-9ee3-3b38d8d8cbe3)
+![FAQ](https://github.com/user-attachments/assets/877f658b-3497-4793-aec2-69dfcf89260c)
+![Footer](https://github.com/user-attachments/assets/b79341f0-921c-4871-9554-cbd7ee805bfe)
 
 🧠 Lessons Learned
 
